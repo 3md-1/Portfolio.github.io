@@ -6,9 +6,9 @@ const projectsData = [
         subheading: "Jameel Arts Center, Dubai",
         description: "A live A/V set with artist Aakarsh Singh as a part of the 2025 Jameel Arts Youth Assembly.",
         images: [
-            "Media/Synthesizing-3.jpeg",
-            "Media/Synthesizing-2.jpeg",
-            "Media/Synthesizing-1.jpeg",
+            "Synthesizing-3.jpeg",
+            "Synthesizing-2.jpeg",
+            "Synthesizing-1.jpeg",
         ]
     },
     {
@@ -28,9 +28,9 @@ const projectsData = [
         subheading: "NYUAD, Abu Dhabi",
         description: "Part of the 2025 NYUAD Capstone. Will be showcased, in part, at the Ars Electronica 2025.",
         images: [
-            "Media/LAND-1.jpeg",
-            "Media/LAND-2.jpeg",
-            "Media/LAND-3.jpeg",
+            "LAND-1.jpeg",
+            "LAND-2.jpeg",
+            "LAND-3.jpeg",
         ]
     },
      {
@@ -39,9 +39,9 @@ const projectsData = [
         subheading: "NYUAD, Abu Dhabi",
         description: "A combination of creative computing and filmmaking. Will be shown at Ars Electronica 2025 in Linz, Austria.",
         images: [
-            "Media/The-Eye-1.jpeg",
-            "Media/The-Eye-2.jpeg",
-            "Media/The-Eye-3.jpeg",
+            "The-Eye-1.jpeg",
+            "The-Eye-2.jpeg",
+            "The-Eye-3.jpeg",
         ]
     },
      {
