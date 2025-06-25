@@ -1,2 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Artist Portfolio</title>
+    <!-- Link to the CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Import the Montserrat font from Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body id="home">
+
+    <div id="main-content">
+        <!-- Main Header -->
+        <header>
+            <a href="#home" class="logo">3md1</a>
+            <nav>
+                <ul>
+                    <li><a href="#home">HOME</a></li>
+                    <li><a href="#projects">PROJECTS</a></li>
+                    <li><a href="#exhibitions">EXHIBITIONS</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="typing-text" class="typing-container"></div>
+
+        <button id="gemini-btn" class="gemini-button" aria-label="Generate New Text">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>
+        </button>
+
+        <div class="canvas-container">
+            <!-- p5.js canvas will be inserted here by the script -->
+        </div>
+
+        <div class="scroll-content">
+            <div id="projects" class="page-section">
+                <h2>Past Projects</h2>
+                <div class="carousel-container">
+                    <div class="carousel-track">
+                        <div class="carousel-item" data-project-id="0">
+                            <img src="Media/Synthesizing-3.jpeg" alt="Synthesizing Landscapes">
+                            <h3>Synthesizing Landscapes</h3>
+                        </div>
+                        <div class="carousel-item" data-project-id="1">
+                            <img src="Media/Time-1.png" alt="in Time.">
+                            <h3>in Time</h3>
+                        </div>
+                        <div class="carousel-item" data-project-id="2">
+                            <img src="Media/LAND-1.jpeg" alt="LAND">
+                            <h3>LAND: Local Access Network Diptych</h3>
+                        </div>
+                        <div class="carousel-item" data-project-id="3">
+                            <img src="Media/The-Eye-1.jpeg" alt="The Eye in the Sands">
+                            <h3>The Eye in the Sands</h3>
+                        </div>
+                        <div class="carousel-item" data-project-id="4">
+                            <img src="Media/TWADG-1.jpg" alt="To Water A Dying Garden">
+                            <h3>To Water A Dying Garden</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="exhibitions" class="page-section">
+                <h2>Exhibitions</h2>
+                <div class="exhibition-list">
+                  <div class="exhibition-item">
+                      <h3>2025 - NYUAD at Ars Electronica - Linz, Austria</h3>
+                  </div>
+                  <div class="exhibition-item">
+                      <h3>2025 - Synthesizing Landscapes - Jameel Arts Center, Dubai</h3>
+                  </div>
+                  <div class="exhibition-item">
+                      <h3>2025 - In Time. - The Louvre, Abu Dhabi</h3>
+                  </div>
+                  <div class="exhibition-item">
+                      <h3>2024 - The Eye in the Sands - NYUAD, Abu Dhabi</h3>
+                  </div>
+                  <div class="exhibition-item">
+                      <h3>2023 - To Water a Dying Garden - MIZA, Abu Dhabi</h3>
+                  </div>
+                </div>
+            </div>
+
+            <div id="about" class="page-section">
+                <h2>About</h2>
+                <p class="bio-text">Ahmed Bilal is a creative technologist whose work inhabits the glitching threshold between cybernetic systems and sensorial experience. Merging ambient design with speculative fiction, their practice explores the latent narratives of machines, oscillating between poetic code and pulsing hardware. From server-stack light choreography to proximity-reactive installations, their projects evoke a technoccult sensibility: animating circuits not as tools, but as agents of estranged perception.</p>
+
+                <div class="socials-sub-section">
+                    <h3>Socials and Contact</h3>
+                    <div class="socials-container">
+                        <a href="mailto:ahmed.bilal@nyu.edu" target="_blank">Mail</a>
+                        <a href="https://www.linkedin.com/in/ahmed-bilal-666b20245/" target="_blank">LinkedIn</a>
+                        <a href="https://www.instagram.com/3md1.online/" target="_blank">Instagram</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="project-detail-page" style="display: none;">
+         <header class="project-detail-header">
+            <nav>
+                <ul>
+                    <li><a href="#" id="back-to-home">HOME</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="project-content">
+            <div class="project-gallery">
+                <div class="main-image">
+                    <img id="project-main-image" src="" alt="Main project image">
+                </div>
+                <div id="project-thumbnails" class="thumbnail-track"></div>
+            </div>
+            <h1 id="project-title" class="project-title"></h1>
+            <h2 id="project-subheading" class="project-subheading"></h2>
+            <p id="project-description" class="project-description"></p>
+        </div>
+    </div>
+
+    <div id="image-modal" class="modal" style="display: none;">
+        <img id="modal-image" src="" alt="Enlarged project image">
+    </div>
+
+    <!-- Import p5.js library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+    <!-- Link to the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
 
 
